@@ -135,9 +135,11 @@ class Add extends React.Component {
 							</Button>
 						</Link>
 						<br />
-						<fieldset>
+						<fieldset className="addFieldset">
+							<div className = "fieldsetDiv">
 							<label value="description">Description:</label>
 							<input
+								className="addInput"
 								type="text"
 								id="description"
 								name="description"
@@ -146,6 +148,7 @@ class Add extends React.Component {
 							></input>
 							<label value="amount">Amount:</label>
 							<input
+								className="addInput"
 								type="number"
 								id="amount"
 								name="amount"
@@ -219,6 +222,7 @@ class Add extends React.Component {
 									2022
 								</option>
 							</select>
+							</div>
 						</fieldset>
 						<div className="button-center">
 							<br />
