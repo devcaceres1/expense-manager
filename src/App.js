@@ -9,6 +9,7 @@ import YearTabRouter from './components/YearTabRouter';
 import MonthTabs from './components/MonthTabs';
 
 import './assests/styles/App.css';
+import Sleeping from './assests/images/Sleeping.png';
 
 class App extends React.Component {
 	constructor() {
@@ -67,6 +68,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
+				<h1 className="title"> Expense Manager </h1>
 				<Tabs activeKey={this.state.activeTab} onSelect={this.handleSelect}>
 					<Tab eventKey={2018} title={<YearTabRouter year="2018" />}>
 						<MonthTabs
@@ -118,7 +120,7 @@ class App extends React.Component {
 					<tbody>
 						{this.state.data.map((response) => {
 							return (
-								<tr>
+								<tr className = "responseFont">
 									<td className="counterCell"></td>
 									<td className="desc-col">{response.description}</td>
 									<td className="button-col">{response.amount}</td>
