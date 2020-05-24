@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import axios from 'axios';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import '../assests/styles/App.css';
 
 let querystring = require('querystring');
 
@@ -125,23 +126,31 @@ class Update extends React.Component {
 						<br />
 						<fieldset>
 							<div className="fieldsetDiv">
-								<label for="description">Description:</label>
+								<label className="updateLabel" for="description">
+									Description:
+								</label>
 								<input
+									className="updateInput"
 									type="text"
 									id="description"
 									name="description"
 									value={this.state.description}
 									onChange={this.handleTextChange}
 								></input>
-								<label for="amount">Amount:</label>
+								<label className="updateLabel" for="amount">
+									Amount:
+								</label>
 								<input
+									className="updateInput"
 									type="number"
 									id="amount"
 									name="amount"
 									value={this.state.amount}
 									onChange={this.handleTextChange}
 								></input>
-								<label for="month">Month:</label>
+								<label className="updateLabel" for="month">
+									Month:
+								</label>
 								<select
 									id="month"
 									name="month"
@@ -152,7 +161,7 @@ class Update extends React.Component {
 										January
 									</option>
 									<option value="Feb" id="Feb">
-										Febrary
+										February
 									</option>
 									<option value="Mar" id="Mar">
 										March
@@ -185,7 +194,9 @@ class Update extends React.Component {
 										December
 									</option>
 								</select>
-								<label for="year">Year:</label>
+								<label className="updateLabel" for="year">
+									Year:
+								</label>
 								<select
 									id="year"
 									name="year"
