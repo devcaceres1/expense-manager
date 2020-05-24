@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Expense Manager
 
-## Available Scripts
+Expense Manager was designed to do all the boring work for us. Well not all since you still have to input the information yourself :/.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+Clone down this repository. You will need Node, and Npm installed globally on your machine.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You will also need to install Axios, React, Springboot, React-router-dom, and Bootstrap.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Installation:
 
-### `npm test`
+npm install
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm install axios
+npm install react
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```javascript
+import react from 'react';
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Reflection
 
-### `npm run eject`
+The project goal included utilizing technologies learned up until this point, while also gaining knowledge and usage of new packages/tools.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Written in both Java and Javascript. Technologies implemented in this project are React, React-Router, Axios. Also Bootstrap, and CSS. Utilized create-react-app due to ease of usage and time effectiveness.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Issues during production sourced from lack of understanding Java, and Springboot as a Framework. Spent 2 of the 4 project days on targeting that weakness alone. Felt I needed a stronger foundation before I jumped into the CRUD aspect of the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## References
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+https://spring.io/guides/tutorials/react-and-spring-data-rest/
 
-## Learn More
+https://docs.spring.io/spring-data/mongodb/docs/current/api/org/springframework/data/mongodb/repository/MongoRepository.html
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://stackoverflow.com/questions/36113367/how-to-make-image-buttons-in-jsx
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+https://www.journaldev.com/3963/mongodb-java-crud-example-tutorial
 
-### Code Splitting
+https://stackoverflow.com/questions/8648892/how-to-convert-url-parameters-to-a-javascript-object
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Wireframe
 
-### Analyzing the Bundle Size
+![image]()
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![image]()
