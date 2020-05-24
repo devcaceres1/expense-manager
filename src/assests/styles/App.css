@@ -2,16 +2,6 @@
 	text-align: center;
 }
 
-.button-col {
-	width: 100px;
-	text-align: center;
-}
-
-.desc-col {
-	width: 300px;
-	text-align: left;
-}
-
 table {
 	counter-reset: tableCount;
 }
@@ -21,10 +11,10 @@ table {
 	counter-increment: tableCount;
 }
 
-.counterCell {
-	text-align: center;
-	width: 50px;
-}
+/* .counterCell { */
+/* text-align: center; */
+/* width: 50px; */
+/* } */
 
 .button-center {
 	text-align: center;
@@ -33,7 +23,7 @@ table {
 .Modal {
 	position: relative;
 	top: 250px;
-	left: 400px;
+	left: 500px;
 	right: 20px;
 	bottom: 20px;
 	background-color: #f5f5f5;
@@ -56,24 +46,14 @@ table {
 	text-align: center;
 }
 
-label {
-	display: inline-block;
-	width: 200px;
-	margin-right: 30px;
+.fieldsetDiv {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	/* justify-items: center; */
+	justify-self: center;
 	text-align: right;
-}
-
-fieldset {
-	border: none;
-	margin: 0px auto;
-}
-
-.closebtn {
-	float: right;
-}
-
-#deleteBtnSpace {
-	
+	align-items: center;
 }
 
 Nav {
