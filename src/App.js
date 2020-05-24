@@ -20,6 +20,7 @@ class App extends React.Component {
 			activeTab: 2020,
 		};
 		this.getData = this.getData.bind(this);
+		this.handleSelect = this.handleSelect.bind(this);
 	}
 	componentWillReceiveProps(nextProps) {
 		if (nextProps.history.location.search) {
@@ -53,7 +54,6 @@ class App extends React.Component {
 			activeTab: selectedTab,
 			selectedYear: selectedTab,
 		});
-		console.log(this.handleSelect(selectedTab));
 	}
 	getData(res, year, month) {
 		axios
@@ -103,7 +103,7 @@ class App extends React.Component {
 					selectedMonth={this.state.selectedMonth}
 					selectedYear={this.state.selectedYear}
 				/>
-				<table>
+				<table className="table">
 					<thead>
 						<tr>
 							<th></th>
